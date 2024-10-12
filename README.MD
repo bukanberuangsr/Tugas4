@@ -11,4 +11,4 @@
 
 ## Deskripsi
 
-EZRent merupakan seuah website fiksi yang digunakan untuk merental barang-barang.
+**EZRent** merupakan seuah **website fiksi** yang digunakan untuk merental barang apapun. Untuk melihat website ini, disarankan bagi anda untuk menggunakan XAMPP atau web server sejenisnya.
