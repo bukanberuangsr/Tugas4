@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
     $user = mysqli_fetch_assoc($result);
 
     // Jika username ditemukan dan password cocok
-    if ($user && password_verify($userpass, $user['password'])) {
+    if ($user && password_verify($password, $user['password'])) {
         $_SESSION['username'] = $user['username'];
         header('Location: index.php');
         exit();

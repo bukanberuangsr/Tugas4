@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
         $error_message = 'Password dan konfirmasi password tidak cocok!';
     } else {
         // Hash password
-        $hashed_password = password_hash($userpass, PASSWORD_DEFAULT);
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Query untuk menyimpan user baru
         $query = "INSERT INTO users (username, password) VALUES ('$username', '$hashed_password')";
