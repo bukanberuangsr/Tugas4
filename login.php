@@ -20,9 +20,9 @@ if (isset($_POST['submit'])) {
     $user = mysqli_fetch_assoc($result);
 
     // Jika username ditemukan dan password cocok
-    if ($user && password_verify($password, $user['password'])) {
-        $_SESSION['username'] = $user['username']; // Simpan username ke sesi
-        header('Location: index.php'); // Arahkan ke halaman HitungLuas
+    if ($user && password_verify($userpass, $user['password'])) {
+        $_SESSION['username'] = $user['username'];
+        header('Location: index.php');
         exit();
     } else {
         $error_message = 'Username atau Password salah!';
