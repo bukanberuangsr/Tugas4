@@ -1,0 +1,31 @@
+body{
+    background-color: #1B1E2F;
+    margin: 0;
+    color: #f2f2f2;
+
+}
+nav{
+    background-color: #2E3140;
+    overflow: hidden;
+    a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    a:hover{
+        background-color: #F2884B;
+        color: #1B1E2F;
+    }
+    .logout{
+        float: right;
+        background-color: #F2884B;
+        color: #1B1E2F;
+    }
+    .logout:hover{
+        background-color: #F25757;
+        color: #f2f2f2;
+    }
+}
