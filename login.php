@@ -38,21 +38,23 @@ if (isset($_POST['submit'])) {
     <title>Login</title>
 </head>
 <body>
-    <h1 class="header">Login</h1>
-    <?php
-    if ($error_message) {
-        echo "<p style='color: red;'>$error_message</p>";
-    }
-    ?>
-    <form action="" method="post">
-        <label for="username">Username:</label><br>
-        <input class="input" type="text" name="username" required>
-        <br><br>
-        <label for="password">Password:</label><br>
-        <input class="input" type="password" name="password" required>
-        <br><br>
-        <input class="submit" type="submit" name="submit" value="Login">
-    </form>
-    <p>Don't have an account yet? <a href="register.php">Register here</a></p>
+    <div class="container">
+        <h1 class="header">Login</h1>
+        <?php
+        if ($error_message) {
+            echo "<p style='color: red;'>$error_message</p>";
+        }
+        ?>
+        <form action="" method="post">
+            <label for="username">Username:</label><br>
+            <input class="input" type="text" name="username" required>
+            <br><br>
+            <label for="password">Password:</label><br>
+            <input class="input" type="password" name="password" required>
+            <br><br>
+            <input class="submit" type="submit" name="submit" value="Login">
+        </form>
+        <p>Don't have an account yet? <a href="register.php">Register here</a></p>
+    </div>
 </body>
 </html>

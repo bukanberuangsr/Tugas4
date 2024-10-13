@@ -38,28 +38,29 @@ if (isset($_POST['submit'])) {
     <title>Register</title>
 </head>
 <body>
-    <h1 class="header">Sign Up</h1>
-    <p>Sign up to start renting!</p>
-    <?php
-    if ($error_message) {
-        echo "<p style='color: red;'>$error_message</p>";
-    }
-    if ($success_message) {
-        echo "<p style='color: green;'>$success_message</p>";
-    }
-    ?>
-    <form action="" method="post">
-        <label for="username">Username:</label><br>
-        <input class="input" type="text" name="username" required>
-        <br><br>
-        <label for="password">Password:</label><br>
-        <input class="input" type="password" name="password" required>
-        <br><br>
-        <label for="confirm_password">Confirm your Password:</label><br>
-        <input class="input" type="password" name="confirm_password" required>
-        <br><br>
-        <input class="submit" type="submit" name="submit" value="Sign Up">
-    </form>
-    <p>Already have an account? <a href="login.php">Login here</a></p>
+    <div class="container">
+        <h1 class="header">Sign Up</h1>
+        <?php
+        if ($error_message) {
+            echo "<p style='color: red;'>$error_message</p>";
+        }
+        if ($success_message) {
+            echo "<p style='color: green;'>$success_message</p>";
+        }
+        ?>
+        <form action="" method="post">
+            <label for="username">Username:</label><br>
+            <input class="input" type="text" name="username" required>
+            <br><br>
+            <label for="password">Password:</label><br>
+            <input class="input" type="password" name="password" required>
+            <br><br>
+            <label for="confirm_password">Confirm your Password:</label><br>
+            <input class="input" type="password" name="confirm_password" required>
+            <br><br>
+            <input class="submit" type="submit" name="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="login.php">Login here</a></p>
+    </div>
 </body>
 </html>

@@ -17,14 +17,12 @@ if (!isset($_SESSION['username'])){
 <body>
     <nav>
         <a href="index.php">Home</a>
-        <a class="logout" href="logout.php">logout</a>
+        <a class="logout" href="logout.php">Logout</a>
     </nav>
     <div class="hero">
-        <div class="hero-text">
-            <h1>Welcome to the EZRental!</h1>
-            <p>What would you like to rent today?</p>
-            <a href="item_list.php">View Available Items</a><br>
-        </div>
+        <h1>Welcome to the EZRental!</h1>
+        <p>What would you like to rent today?</p>
+        <a href="item_list.php">View Available Items</a><br>
     </div>
 </body>
 </html>
