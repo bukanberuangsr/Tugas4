@@ -18,13 +18,13 @@ if (isset($_POST['submit'])) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Query untuk menyimpan user baru
-        $query = "INSERT INTO users (username, password) VALUES ('$username', '$hashed_password')";
+        $query = "INSERT INTO users (username, userpass) VALUES ('$username', '$hashed_password')";
 
         if (mysqli_query($conn, $query)) {
             $success_message = 'Registrasi berhasil! Silakan login.';
             header('Location: login.php');
         } else {
-            $error_message = 'Gagal mendaftar: ' . mysqli_error($conn);
+            $error_message = 'Sign up failed: ' . mysqli_error($conn);
         }
     }
 }

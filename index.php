@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (!isset($_SESSION['username'])){
     header("location: login.php");
     exit();
@@ -11,12 +12,19 @@ if (!isset($_SESSION['username'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="css/homepage.css">
 </head>
 <body>
-    <!-- <?php include "header.php" ?> -->
-    <h1>Welcome to the EZRental!</h1>
-    <p>What would you like to rent today?</p>
-    <a href="views/list_barang.php">View Available Items</a>
-    <a href="actions/logout.php">Logout</a>
+    <nav>
+        <a href="index.php">Home</a>
+        <a class="logout" href="logout.php">logout</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the EZRental!</h1>
+            <p>What would you like to rent today?</p>
+            <a href="item_list.php">View Available Items</a><br>
+        </div>
+    </div>
 </body>
 </html>
