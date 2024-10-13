@@ -1,5 +1,6 @@
 body{
     background-color: #1B1E2F;
+    margin: 0;
 }
 nav{
     background-color: #2E3140;
@@ -14,34 +15,32 @@ nav{
     }
     a:hover{
         background-color: #F2884B;
-        color: black;
+        color: #1B1E2F;
     }
     .logout{
         float: right;
         background-color: #F2884B;
-        color: black;
+        color: #1B1E2F;
     }
     .logout:hover{
         background-color: #F25757;
-        color: #f2f2f2;
+        color: #FCFFF8;
     }
 }
 .hero{
     background-color: #FECDA8;
-    padding: 20%;
-    .hero-text {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #1B1E2F;
-        a{
-            background-color: #F2884B;
-            padding: 8px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #f2f2f2;
-        }
+    padding: 260px;
+    text-align: center;
+    color: #1B1E2F;
+    a{
+        background-color: #F2884B;
+        padding: 8px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #FCFFF8;
+    }
+    a:hover{
+        background-color: #444359;
+        color: #FCFFF8;
     }
 }
